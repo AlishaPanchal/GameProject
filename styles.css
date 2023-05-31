@@ -20,31 +20,31 @@
   transition: color 0.3s ease-in;
 }
 #topNav > ul > li > a:hover {
-  color: lightblue;
+  color: #880808;;
 }
 h1 {
   text-decoration: underline;
   font-family: lucida handwriting;
   text-align: center;
-  color: red;
+  color: #880808;
 }
 h2 {
   font-family: lucida handwriting;
   text-decoration: underline;
   text-align: center;
-  color: red;
+  color: #880808;
 }
 h3 {
   font-family: lucida handwriting;
   text-decoration: underline;
   text-align: center;
-  color: red;
+  color: #880808;
 }
 h4 {
   font-family: lucida handwriting;
   text-decoration: underline;
   text-align: center;
-  color: red;
+  color: #880808;
 }
 html {
   background-color: white;
@@ -68,12 +68,15 @@ p {
   max-width: auto;
   margin: auto;
   font-family: monaco;
+  color: #880808;
 }
 ul{
   font-family: monaco;
+  color: #880808;
 }
 ol{
   font-family: monaco;
+  color: #880808;
 }
 video.center {
   display: block;
