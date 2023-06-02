@@ -120,7 +120,15 @@
                 <figcaption>Figure 7: Fiat Justitia Role Assigner Python Code</figcaption>
             </figure>
         <p>
-        Enter description here. (Include all necessary wiring as well as circuit board.)(Include code block for python code.) (Describe the code.)
+        This is the python code behind the Role Assigner. Below is an explanation of the code.<br></br>
+	Python Code Explanation: The first 3 lines are simply importing and defining different functions that will be used later on. Lines 4 and 5 set a value for the brightness of the pixels 
+	and the color of the light the pixels will emit. Next, Lines 5-7 set up the if statement. They define a variable, role_assigner(), set the starting lights of the pixels to be off, and 
+	define another variable, role, to be a random integer between and including 1 through 5, respectively. Following this is the if elif statement. This chuck of code simply states that 
+	if role is equal to a specific number, numbered pixels will turn on and emit the color originally set. This happens for integers 1, 2, 3, and 4, with each increase integer turning on 2 
+	additional pixels. Finally, the end of the if elif statment is the else statement, which occurs when role = 5. In this case, all of the pixels will turn on and emit the designated color.
+	The two lines of code below the else statement, "print(role)" and "time.sleep(1.0)" are to print the number that is chosen and to leave a pause of one second, respectively. The number is printed 
+	so that we, the coders, know if the code is running. It serves no purpose for the players of the game. Finally, the last 3 lines of code state that the variable role_assigner() will only run 
+	when Button A is pressed.
         </p>
         <h2>Component #6: The Rule Book</h2>
             <figure>
