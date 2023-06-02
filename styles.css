@@ -24,24 +24,24 @@
 }
 h1 {
   text-decoration: underline;
-  font-family: lucida handwriting;
+  font-family: papyrus;
   text-align: center;
   color: #880808;
 }
 h2 {
-  font-family: lucida handwriting;
+  font-family: papyrus;
   text-decoration: underline;
   text-align: center;
   color: #880808;
 }
 h3 {
-  font-family: lucida handwriting;
+  font-family: papyrus;
   text-decoration: underline;
   text-align: center;
   color: #880808;
 }
 h4 {
-  font-family: lucida handwriting;
+  font-family: papyrus;
   text-decoration: underline;
   text-align: center;
   color: #880808;
@@ -81,24 +81,8 @@ video.center {
   margin-right: auto;
 }
 ul.nav li{
-  font-family: lucida handwriting;
+  font-family: papyrus;
   font-size: 20px
-}
-table {
-  text-align: center;
-  border-collapse: collapse;
-  margin-left: auto;
-  margin-right: auto;
-}
-th, td {
-  padding: 15px;
-}
-th {
-  font-family: lucida handwriting;
-}
-td {
-  border: 1px solid;
-  font-family: monaco;
 }
 .choice {
   font-style: italic;
