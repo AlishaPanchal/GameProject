@@ -52,6 +52,7 @@ html {
 figcaption {
   text-align: center;
   font-style: italic;
+  font-family: monaco;
 }
 img {
   display: block;
