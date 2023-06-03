@@ -52,9 +52,9 @@
           <figcaption>Figure 3: Fiat Justitia Game Board</figcaption>
         </figure>
         <p> 
-        The Game Board is a visual top view of a typical courtroom. It consists of the judge's table, the jury box, the transcriber's desk, the witness stand, 
-        three counsel tables (Left, Middle & Right), and the public seating area. There are also multiple sets of doors around the room. The Game Board can be used to visualize 
-        where the bailiff is murdered, each player's position, and overall, what a courtroom looks like in real life. 
+        The Game Board is a visual of the top view of a typical courtroom. It consists of the judge's table, the jury box, the transcriber's desk, the witness stand, 
+        three counsel tables (Left, Middle & Right), and the public/media seating area. There are also multiple sets of doors around the room. The Game Board can be used to visualize 
+        where the bailiff is found bleeding, each player's position, and overall, what a courtroom looks like in real life. 
         </p>
         <h2>Component #3: The Cards</h2>
         <figure>
@@ -62,8 +62,8 @@
           <figcaption>Figure 4: Fiat Justitia Playing Cards</figcaption>
         </figure> 
         <p>
-        This is the deck of playing cards. They include the role, wild, question, answer, divider, and title cards, all of which are explained below. These cards are essential 
-        to Fiat Justitia. They also took the most time to make because they refused to cooperate!
+        This is the deck of playing cards. They include the Role, Wild, Question, Answer, Divider, and Title cards, all of which are explained below in further detail. These cards are essential 
+        to Fiat Justitia. They also took the most time to make because they refused to cooperate.
         </p>
         <h3>Card Types</h3>
         <figure>
@@ -82,7 +82,7 @@
                 <li>Figure 4a shows the Title Card, which has the Fiat Justitia logo and the flamboyant borders on both sides.</li>
                 <li>Figure 4b shows the Wild Cards. The Wild Card on the left is for the Judge/Jury player(s), which lets the player(s) ask any question 
                     they would like to ask to clarify the case for themselves. The Wild Card on the right is for the Accused. There are two of these in the entire deck. 
-		    If they get the Wild Card, they can use it to answer any question in any way they would like, either to remove the suspicion from themselves or to accuse another one of the Accused.</li>
+		    If they get the Wild Card, they can use it to answer any question in any way they would like, either to remove any suspicion from themselves or to accuse another one of the Accused.</li>
                 <li>Figure 4c shows 4 out of the 7 Role Cards. They are for the Judge/Jury, and the 3 Accused. For the Accused, they tell the player if they are guilty or innocent.</li>
                 <li>In the final figure, Figure 4d, the Divider, Question, and Answer cards for Category I are spread out. There are total of 12 Divider cards similar to the card on the top. 
                     There are a total of 12 Question cards for each of the categories, similar to the card in the middle, and finally, there are multiple Answer cards for each category. 
@@ -95,9 +95,9 @@
           <figcaption>Figure 5: Fiat Justitia Player Tokens</figcaption>
         </figure>
         <p> 
-        These are the Player Tokens. The bloody gavel on the right is for the Judge/Jury player(s), while the 3 handcuffs are for each of the Accused, and the two briefcases are for the initial 2 lawyers. 
-	To make things a bit more realistic and fun, we have included the 3D interactive models of each of our Player Tokens below! Their order is as follows: Gavel, Briefcase, Handcuffs. 
-	Have fun exploring!
+        These are the Player Tokens. The bloody gavel on the right is for the Judge/Jury player(s), while the 3 handcuffs are for each of the Accused, and the two briefcases are for the Arson case's 
+	initial 2 lawyers. These tokens are switched and swapped around once the case switches from arson to attempted murder and embezzlement. Finally, to make things a bit more realistic and fun, 
+	we have included 3D interactive models of each of our Player Tokens below! The order is as follows: Gavel, Briefcase, Handcuffs. Have fun exploring!
 	</p><br></br>
 		<iframe allowfullscreen width="640" height="480" loading="lazy" frameborder="0" src="https://p3d.in/e/mo3Zk"></iframe>
 		<iframe allowfullscreen width="640" height="480" loading="lazy" frameborder="0" src="https://p3d.in/e/JjPF2"></iframe>
@@ -112,11 +112,11 @@
 	</figure>
             <figure>
                 <img src="images/CircuitBoard.png" alt="The Role Assigner (A.K.A. The Circuit Board)" width="576" height="288">
-                <figcaption>Figure 6: Fiat Justitia Role Assigner</figcaption>
+                <figcaption>Figure 6: Circuit Board & Wiring</figcaption>
             </figure> 
         <p>
-        In the video, the Role Assigner can be seen in action during one of our playtesting rounds. The player presses Button A on the Circuit Board as the input, which emits a random number of 
-	red pixels as the output. The number of pixels lit up correlate to a role in the Arson case. <br></br>
+        In the video, the Role Assigner can be seen in action during one of our playtesting rounds. The player presses Button A on the Circuit Board as the input and as the output, a random number of pixels emit 
+	a blood red light. The number of pixels that light up correlate to a role in the Arson case. <br></br>
 	Figure 6 shows the Circuit Board and the necessary wiring needed. The board is on the left, while the battery pack is in the middle, and the connecting HDMI wire is on the right.
         </p>
         <h3>Circuit Board Python Code</h3>
@@ -127,13 +127,13 @@
         <p>
         This is the python code behind the Role Assigner. Below is an explanation of the code.<br></br>
 	Python Code Explanation: The first 3 lines are simply importing and defining different functions that will be used later on. Lines 4 and 5 set a value for the brightness of the pixels 
-	and the color of the light the pixels will emit. Next, Lines 5-7 set up the if statement. They define a variable, role_assigner(), set the starting lights of the pixels to be off, and 
+	and the color of the light the pixels will emit. Next, Lines 5-7 set up the if elif statement. They define a variable, role_assigner(), set the starting lights of the pixels to be off, and 
 	define another variable, role, to be a random integer between and including 1 through 5, respectively. Following this is the if elif statement. This chuck of code simply states that 
-	if role is equal to a specific number, numbered pixels will turn on and emit the color originally set. This happens for integers 1, 2, 3, and 4, with each increase integer turning on 2 
-	additional pixels. Finally, the end of the if elif statment is the else statement, which occurs when role = 5. In this case, all of the pixels will turn on and emit the designated color.
-	The two lines of code below the else statement, "print(role)" and "time.sleep(1.0)" are to print the number that is chosen and to leave a pause of one second, respectively. The number is printed 
-	so that we, the coders, know if the code is running. It serves no purpose for the players of the game. Finally, the last 3 lines of code state that the variable role_assigner() will only run 
-	when Button A is pressed.
+	if the variable "role" is equal to a specific integer, the circuit board's numbered pixels will turn on and emit the color originally set. This happens for integers 1, 2, 3, and 4, with each 
+	increasing integer turning on 2 additional pixels (e.g. role = 1, pixels 1 and 2 light up, role = 2, pixels 1 through 4 light up, and so on.). Finally, the end of the if elif statment is the 
+	else statement, which occurs when role = 5. In this case, all of the pixels will turn on and emit the designated color. The two lines of code below the else statement, "print(role)" and "time.sleep(1.0)" 
+	are to print the number that is chosen and to leave a pause of one second, respectively. The number is printed so that we, the coders, know if the code is running. It serves no purpose for the 
+	players of the game. Finally, the last 3 lines of code state that the variable role_assigner() will only run when Button A is pressed.
         </p>
         <h2>Component #6: The Rule Book</h2>
             <figure>
@@ -141,7 +141,7 @@
                 <figcaption>Figure 8: Fiat Justitia Rule Book</figcaption>
             </figure> 
         <p>
-        The Rule Book is a 5-page booklet on the instructions and rules of Fiat Justitia. It includes game introduction, description, and How To Play guide, a description with diagrams on 
+        The Rule Book is a 5-page booklet on the instructions and rules of Fiat Justitia. It includes an introduction to the game, a description of the game, a How To Play guide, a description with diagrams on 
 	how the Role Assigner works, the rules, an outline of what is included in the Game Box, and finally, some miscellaneous information. 
         </p>
     </body>
