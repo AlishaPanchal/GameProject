@@ -93,4 +93,5 @@ ul.nav li{
 a.resources {
   font-size: 50%;
   text-align: center;
+  display: block;
 }
