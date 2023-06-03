@@ -90,3 +90,7 @@ ul.nav li{
   font-family: papyrus;
   font-weight: bold;
 }
+a.resources {
+  font-size: 200%;
+  text-align: center;
+}
